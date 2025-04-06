@@ -1,6 +1,6 @@
 
 ```markdown
-# Cloud Computing Raft 3D
+Cloud Computing Raft 3D
 
 This project implements a distributed system using the Raft consensus algorithm. The system is developed in Go and aims to provide a reliable and fault-tolerant computing environment.
 
@@ -59,7 +59,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any inquiries, please contact [your-email@example.com].
+For any inquiries, please contact [kushagraagarwal2003@gmail.com].
 ```
 
 You can now create the `README.md` file in your repository with the above content. Let me know if you need any further modifications.
