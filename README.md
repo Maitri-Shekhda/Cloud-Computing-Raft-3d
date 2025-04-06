@@ -1,16 +1,16 @@
 
 ```markdown
-Cloud Computing Raft 3D
+**Cloud Computing Raft 3D**
 
 This project implements a distributed system using the Raft consensus algorithm. The system is developed in Go and aims to provide a reliable and fault-tolerant computing environment.
 
-## Features
+**Features**
 
 - **Distributed Consensus**: Implements the Raft algorithm to achieve consensus among multiple nodes.
 - **Fault Tolerance**: Ensures the system can recover from node failures.
 - **Scalability**: Designed to scale with the addition of new nodes.
 
-## Installation
+**Installation**
 
 Clone the repository:
 
@@ -25,7 +25,7 @@ Build the project:
 go build
 ```
 
-## Usage
+**Usage**
 
 Start the Raft cluster on port 8080:
 
@@ -33,7 +33,7 @@ Start the Raft cluster on port 8080:
 ./Cloud-computing-Raft-3d
 ```
 
-### Adding a Printer
+**Adding a Printer**
 
 You can add a printer using the following `curl` command:
 
@@ -41,7 +41,7 @@ You can add a printer using the following `curl` command:
 curl -X POST -H "Content-Type: application/json" -d '{"company":"Creality","model":"Ender 3"}' http://localhost:8080/api/v1/printers
 ```
 
-### Listing Printers
+**Listing Printers**
 
 You can list all printers using the following `curl` command:
 
@@ -49,17 +49,14 @@ You can list all printers using the following `curl` command:
 curl -X GET http://localhost:8080/api/v1/printers
 ```
 
-## Contributing
+**Contributing**
 
 Contributions are welcome! Please fork the repository and submit a pull request.
 
-## License
+**License**
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Contact
-
-For any inquiries, please contact [kushagraagarwal2003@gmail.com].
 ```
 
-You can now create the `README.md` file in your repository with the above content. Let me know if you need any further modifications.
+You can now create or update the `README.md` file in your repository with the above content. Let me know if you need any further modifications.
