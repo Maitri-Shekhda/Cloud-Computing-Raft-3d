@@ -53,10 +53,3 @@ curl -X GET http://localhost:8080/api/v1/printers
 
 Contributions are welcome! Please fork the repository and submit a pull request.
 
-**License**
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-```
-
-You can now create or update the `README.md` file in your repository with the above content. Let me know if you need any further modifications.
