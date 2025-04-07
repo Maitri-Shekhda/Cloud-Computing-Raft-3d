@@ -54,7 +54,7 @@ curl -X GET http://localhost:8080/api/v1/printers
 
 
 
-
+**to run raft3d folder**
 ```sh
 go mod tidy
 ```
