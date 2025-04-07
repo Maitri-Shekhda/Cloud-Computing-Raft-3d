@@ -49,6 +49,58 @@ You can list all printers using the following `curl` command:
 curl -X GET http://localhost:8080/api/v1/printers
 ```
 
+
+
+
+
+
+
+```sh
+go mod tidy
+```
+```sh
+go build
+```
+
+**run first node**
+```sh
+go run main.go -id node1 -http 127.0.0.1:8001 -raft 127.0.0.1:9001 -data ./data -bootstrap
+```
+
+**run second node**
+```sh
+go run main.go -id node2 -http 127.0.0.1:8002 -raft 127.0.0.1:9002 -data ./data -join 127.0.0.1:8001
+```
+
+**run third node**
+```sh
+go run main.go -id node3 -http 127.0.0.1:8003 -raft 127.0.0.1:9003 -data ./data -join 127.0.0.1:8001
+```
+**add printer**
+```sh
+curl -X POST http://localhost:8001/printers -H "Content-Type: application/json" -d '
+{
+  "id": "printer1",
+  "name": "My 3D Printer",
+  "model": "Ender 3",
+  "status": "idle",
+  "temperature": 25,
+  "material": "PLA"
+}
+'
+```
+**list of printers**
+```sh
+curl http://localhost:8001/printers
+```
+**get a specific printer**
+```sh
+curl http://localhost:8001/printers/printer1
+```
+**metrics of nodes**
+```sh
+curl http://localhost:8001/metrics
+```
 **Contributing**
 
 Contributions are welcome! Please fork the repository and submit a pull request.
